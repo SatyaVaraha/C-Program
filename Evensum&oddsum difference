@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+int main()
+{
+    int n,i,odd,even,diff;
+    i=1;
+    odd=even=0;
+    scanf("%d",&n);
+    while(i<=n)
+    {
+    printf("%d\n",i);
+    if(i%2==0){
+    even=even+i;
+    }
+    if(i%2==1){
+    odd=odd+i;
+    }
+    i++;
+    }
+    diff=even-odd;
+    printf("Evensum= %d\nOdd=%d\nDifference=%d",even,odd,diff);
+ 
+}
